@@ -20,7 +20,7 @@ content => 'eula=true',
 file{'/etc/systemd/system/minecraft.service':
 ensure => file,
 content => epp('minecraft/minecraft.service',{
-install_dir=$install_dir,
+install_dir => $install_dir,
 })
 }
 service {'minecraft':
