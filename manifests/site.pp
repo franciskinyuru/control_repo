@@ -6,7 +6,7 @@ owner => 'root',
 }
 }
 node 'master.puppet.vm' {
- include role::master_1
+ include site::role::master_1
 }
 node /^web/ {
 include role::app_server
